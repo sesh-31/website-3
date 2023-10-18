@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shesh -Devloper portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 94);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav ul li a:hover {
+            color: orangered;
+            font-size: 1.4rem;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        .left {
+            font-size: 1.7rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+
+        .firstsection>div {
+            width: 40%;
+            justify-content: space-around;
+            margin: 23px 0;
+            margin: 50px 0;
+        }
+
+        .leftsection {
+            font-size: 22px;
+            margin: -10px;
+        }
+
+        .rightsection img {
+            width: 90%;
+            margin: -47px 0;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .typed-text {
+            color: orangered;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        .secondSection hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 4px -1px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection box {
+            background: red;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Shesh's portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <span id="element" class="typed-text"></span>
+                <br>
+                Hi, My name is <span class="purple">
+                    Shesh raj paudel
+                </span>
+                . I'm thrilled to welcome you to my corner of the digital world. I'm a passionate IT student currently
+                pursuing a Bachelor's degree in Computer Science and Information Technology (CSIT) at Tribhuvan
+                University (TU). My journey in the world of technology has Just started !
+
+            </div>
+            <div class="rightsection">
+                <img src="coder.png" alt="">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <hr>
+            <span class="text-gray">What i feel in this field</span>
+            <h1>My experience as a programmer :</h1>
+            <div class="box ">
+
+                As a beginner programmer, you'll likely experience a mix of emotions. Excitement will come from the
+                endless possibilities programming offers, but you'll also face frustration when things don't work as
+                expected and confusion when learning new concepts. When I entered this field, some of my friends were
+                experienced developers, and I aspired to reach their level (also today i am not up to their 10%). But I
+                remember that everyone
+                starts somewhere. Continuous learning is a core part of programming, as technologies evolve. So stay
+                motivated and embark on this new journey. You'll find support in the programming community, and
+                creativity will be your ally as you build and innovate. Time management and patience are key skills, and
+                mistakes are part of the learning process. Embrace your curiosity and remember that every programmer
+                began as a beginner, just like you.
+
+            </div>
+            <hr>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Welcome To My Yard !'],
+            typeSpeed: 45,
+        });
+    </script>
+</body>
+
+</html>
